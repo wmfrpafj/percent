@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="dps.css">
+        <div class="title">
+        </div>
+        
+    </head>
+    <body>
+    //설명란
+    <div class = perstat>
+        <script>
+            var input = prompt('달 클래스 입력(숫자만 / 12달 이상은 전부 12달로 입력 / 7클, 8클은 취급 안함)', '메세지를 입력해주세요');
+            document.write("달주사위 " + input + " 클래스" + "  |  ");
+            if (input == 9) {
+                var lunar = 4
+            } else {
+                if (input == 10) {
+                    var lunar = 5
+                } else {
+                    if (input == 11) {
+                        var lunar = 9
+                    } else {
+                        if (input == 12) {
+                            var lunar = 20
+                        }
+                    }
+                }
+            }
+            var sword = prompt('빛검 주사위 클래스 입력(숫자만 / 7클, 8클, 9클은 취급 안함, 15클은 귀찮아서 안만듬[어차피 없잖...])','메세지를 입력해주세요')
+            document.write("빛의검주사위" + sword + "클래스" + "  |  ")
+            if (sword == 10) {
+                var swordc = 3.9
+                var swordd = 3.5
+            } else {
+                if (sword == 11) {
+                    var swordc = 4.2
+                    var swordd = 4
+                } else {
+                    if (sword == 12) {
+                        var swordc = 4.5
+                        var swordd = 4.5
+                    } else {
+                        if (sword == 13) {
+                            var swordc = 4.8
+                            var swordd = 5
+                        } else {
+                            if (sword == 14) {
+                                var swordc = 5.1
+                                var swordd = 5.5
+                            }
+                        }
+                    }
+                }
+            }
+     </script>
+     <script>
+        var hit = (swordc/100)*70*lunar
+        var damage = 100
+        var damage = damage - (damage*(swordd/100))
+        
+        document.write(damage)
+     </script>
+    </div>
+    </body>
