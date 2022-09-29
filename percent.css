@@ -1,0 +1,29 @@
+body{
+    /* background-repeat : 반복조절 */
+    background-image: url('https://ifh.cc/g/o6dYc0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  /*   background-position: top; */
+  }
+
+.perstat{
+    text-align: center;
+    color: white;
+    line-height: 20cm;
+    font-size:250%;
+    font-weight:bolder;
+}
+
+.exp1 {
+    text-align: right;
+    color: rgb(73, 228, 255);
+    font-size:90%;
+    font-weight:blod;
+  }
+
+ .maker {
+    text-align: right;
+    color:orange;
+    font-size:150%;
+    font-weight:bolder;
+  }
