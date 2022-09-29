@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="dps.css">
+        <link rel="stylesheet" href="percent.css">
         <div class="title">
         </div>
         
     </head>
     <body>
-    //설명란
+    <div class = exp1>
+        나오는 수치는 보스가 스킬을 쓰기전(2초)까지 빛검이 깍을 수 있는 보스 체력입니다.
+    </div>
     <div class = perstat>
         <script>
             var input = prompt('달 클래스 입력(숫자만 / 12달 이상은 전부 12달로 입력 / 7클, 8클은 취급 안함)', '메세지를 입력해주세요');
@@ -55,11 +57,22 @@
             }
      </script>
      <script>
-        var hit = (swordc/100)*70*lunar
+        var hit = parseInt((swordc*70)/100)*lunar
         var damage = 100
+        while(hit != 0){
         var damage = damage - (damage*(swordd/100))
-        
-        document.write(damage)
+        hit --
+        }
+        var damage2 = damage
+        var hit = parseInt((swordc*70)/100)*lunar
+        while(hit != 0){
+        var damage2 = damage2 - (damage2*(swordd/100))
+        hit --
+        }
+        document.write(100-damage2 + "%")
      </script>
+    </div>
+    <div class='maker'>
+        <p>제작자: 즐겜러  |  ver.1.2.0</p>
     </div>
     </body>
