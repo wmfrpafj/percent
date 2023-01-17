@@ -29,11 +29,11 @@
                     }
                 }
             }
-            var sword = prompt('빛검 주사위 클래스 입력(숫자만 / 7클, 8클, 9클은 취급 안함, 15클은 귀찮아서 안만듬[어차피 없잖...])','메세지를 입력해주세요')
+            var sword = prompt('빛검 주사위 클래스 입력(숫자만 / 7클, 8클, 9클은 취급 안함, 최근에 15클 유저 등장!','메세지를 입력해주세요')
             document.write("빛의검주사위" + sword + "클래스" + "  |  ")
             if (sword == 10) {
-                var swordc = 3.9
-                var swordd = 3.5
+                var swordc = 3.9 // 빛검 소환 확률
+                var swordd = 3.5 // 빛검 비례뎀
             } else {
                 if (sword == 11) {
                     var swordc = 4.2
@@ -50,6 +50,11 @@
                             if (sword == 14) {
                                 var swordc = 5.1
                                 var swordd = 5.5
+                            } else {
+                                if (sword == 15) {
+                                    var swordc = 5.4
+                                    var swordd = 6
+                                }
                             }
                         }
                     }
@@ -73,6 +78,6 @@
      </script>
     </div>
     <div class='maker'>
-        <p>제작자: 즐겜러  |  ver.1.2.0</p>
+        <p>제작자: 즐겜러  |  ver.2.0.1</p>
     </div>
     </body>
